@@ -1,0 +1,237 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link href="./output.css" rel="stylesheet"> -->
+  <title>Alquilar Car – Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-800 flex items-center justify-center p-6">
+
+  <!-- Card -->
+  <div class="bg-white w-full max-w-2xl rounded-2xl shadow-2xl px-20 py-10 relative">
+
+    <!-- Back Button -->
+    <button class="absolute top-6 left-6 w-9 h-9 bg-blue-500 hover:bg-blue-600 text-white rounded-full flex items-center justify-center transition shadow">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/>
+      </svg>
+    </button>
+
+    <!-- Logo -->
+    <div class="flex flex-col items-center mb-8 mt-2">
+      <img src="./src/Screenshot 2026-01-14 102441.png" alt="">             
+        <!-- Key (top-left, rotated) -->
+        <g transform="translate(20,5) rotate(-30, 40, 30)">
+          <circle cx="28" cy="22" r="14" fill="none" stroke="#1d6fa4" stroke-width="5"/>
+          <circle cx="28" cy="22" r="5.5" fill="#1d6fa4"/>
+          <rect x="41" y="19" width="52" height="6" rx="3" fill="#1d6fa4"/>
+          <rect x="70" y="25" width="5" height="8" rx="1.5" fill="#1d6fa4"/>
+          <rect x="81" y="25" width="5" height="11" rx="1.5" fill="#1d6fa4"/>
+        </g>
+        <!-- Car body -->
+        <g transform="translate(12, 50)">
+          <path d="M8 32 L8 20 Q10 11 22 9 L55 7 Q70 5 82 11 L110 13 Q124 15 126 23 L128 32 Z" fill="#1a2e44"/>
+          <path d="M26 20 Q30 7 46 5 L76 4 Q90 4 98 14 L108 20 Z" fill="#1a2e44"/>
+          <path d="M30 19 Q33 9 46 7 L66 6 L66 19 Z" fill="#5b9bd5" opacity="0.75"/>
+          <path d="M69 6 L87 7 Q95 9 98 19 L69 19 Z" fill="#5b9bd5" opacity="0.75"/>
+          <line x1="67" y1="6" x2="67" y2="20" stroke="#1a2e44" stroke-width="2"/>
+          <circle cx="29" cy="34" r="12" fill="#2d2d2d"/>
+          <circle cx="29" cy="34" r="6.5" fill="#888"/>
+          <circle cx="29" cy="34" r="3" fill="#2d2d2d"/>
+          <circle cx="103" cy="34" r="12" fill="#2d2d2d"/>
+          <circle cx="103" cy="34" r="6.5" fill="#888"/>
+          <circle cx="103" cy="34" r="3" fill="#2d2d2d"/>
+          <line x1="66" y1="13" x2="66" y2="31" stroke="#2a3f55" stroke-width="1.5"/>
+          <ellipse cx="122" cy="24" rx="5" ry="4" fill="#f0c040" opacity="0.9"/>
+        </g>
+      </svg>
+
+      <div class="flex flex-col items-center -mt-1">
+        <span class="text-[#1a2e44] font-black text-2xl tracking-[0.18em] uppercase">ALQUILAR</span>
+        <span class="text-blue-500 font-semibold text-xs tracking-[0.4em] uppercase -mt-1">CAR</span>
+      </div>
+    </div>
+
+    <!-- Subtitle -->
+    <p class="text-gray-700 font-semibold text-sm mb-5">Masuk ke akun Anda</p>
+
+    <!-- Form -->
+    <div class="space-y-4">
+      <input
+        type="text"
+        placeholder="User name or Email"
+        class="w-full bg-gray-100 rounded-full px-6 py-3.5 text-sm text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transition border-0"
+      />
+      <div>
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-full bg-gray-100 rounded-full px-6 py-3.5 text-sm text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transition border-0"
+        />
+        <div class="text-right mt-2 pr-2">
+          <a href="#" class="text-gray-700 font-semibold text-xs hover:text-blue-500 transition">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign In Button -->
+    <button class="w-full mt-7 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-semibold text-sm py-3.5 rounded-full transition shadow-md">
+      sign-in
+    </button>
+
+    <!-- Divider -->
+    <div class="flex items-center my-5">
+      <div class="flex-1 h-px bg-gray-200"></div>
+      <span class="mx-4 text-gray-400 text-xs font-medium">or</span>
+      <div class="flex-1 h-px bg-gray-200"></div>
+    </div>
+
+    <!-- Google Button -->
+    <button class="w-full flex items-center justify-center gap-3 bg-gray-100 hover:bg-gray-200 py-3.5 rounded-full transition text-sm text-gray-600 font-semibold">
+      <svg class="w-5 h-5" viewBox="0 0 24 24">
+        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+      </svg>
+      sign-in With google
+    </button>
+
+  </div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alquilar Car Auth</title>
+  <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="bg-black flex items-center justify-center min-h-screen">
+
+  <div class="flex gap-8">
+
+    <!-- LOGIN -->
+    <div class="bg-gray-100 w-[400px] h-[520px] rounded-lg flex flex-col items-center p-6 relative">
+
+      <!-- Back Button -->
+      <div class="absolute top-4 left-4 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center cursor-pointer">
+        ←
+      </div>
+
+      <!-- Logo -->
+      <div class="flex flex-col items-center mt-6">
+        <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" class="w-16">
+        <h1 class="font-bold text-gray-800 mt-2">ALQUILAR</h1>
+        <span class="text-xs tracking-widest text-gray-500">CAR</span>
+      </div>
+
+      <!-- Title -->
+      <p class="text-sm mt-6 text-gray-700">Masuk ke akun Anda</p>
+
+      <!-- Input -->
+      <div class="w-full mt-4 space-y-3">
+        <input type="text" placeholder="User name or Email"
+          class="w-full px-4 py-2 rounded-full bg-gray-200 outline-none text-sm">
+
+        <input type="password" placeholder="Password"
+          class="w-full px-4 py-2 rounded-full bg-gray-200 outline-none text-sm">
+      </div>
+
+      <!-- Forgot -->
+      <div class="w-full text-right text-xs mt-1 text-gray-500 cursor-pointer">
+        Forgot Password?
+      </div>
+
+      <!-- Button -->
+      <button class="w-full mt-6 bg-blue-600 text-white py-2 rounded-full text-sm hover:bg-blue-700">
+        sign-in
+      </button>
+
+      <!-- Divider -->
+      <div class="flex items-center gap-2 my-4 w-full">
+        <hr class="flex-1 border-gray-300">
+        <span class="text-xs text-gray-500">or</span>
+        <hr class="flex-1 border-gray-300">
+      </div>
+
+      <!-- Google -->
+      <button class="w-full flex items-center justify-center gap-2 bg-gray-200 py-2 rounded-full text-sm">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-4">
+        sign-in With google
+      </button>
+
+    </div>
+
+    <!-- REGISTER -->
+    <div class="bg-gray-100 w-[400px] h-[520px] rounded-lg flex flex-col items-center p-6 relative">
+
+      <!-- Back Button -->
+      <div class="absolute top-4 left-4 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center cursor-pointer">
+        ←
+      </div>
+
+      <!-- Logo -->
+      <div class="flex flex-col items-center mt-6">
+        <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" class="w-16">
+        <h1 class="font-bold text-gray-800 mt-2">ALQUILAR</h1>
+        <span class="text-xs tracking-widest text-gray-500">CAR</span>
+      </div>
+
+      <!-- Form -->
+      <div class="w-full mt-6 space-y-3">
+
+        <input type="text" placeholder="Name"
+          class="w-full px-4 py-2 rounded-full bg-gray-200 outline-none text-sm">
+
+        <input type="email" placeholder="Email Address"
+          class="w-full px-4 py-2 rounded-full bg-gray-200 outline-none text-sm">
+
+        <input type="password" placeholder="Password"
+          class="w-full px-4 py-2 rounded-full bg-gray-200 outline-none text-sm">
+
+        <input type="password" placeholder="Confirm Password"
+          class="w-full px-4 py-2 rounded-full bg-gray-200 outline-none text-sm">
+      </div>
+
+      <!-- Button -->
+      <button class="w-full mt-6 bg-blue-600 text-white py-2 rounded-full text-sm hover:bg-blue-700">
+        Create account
+      </button>
+
+      <!-- Divider -->
+      <div class="flex items-center gap-2 my-4 w-full">
+        <hr class="flex-1 border-gray-300">
+        <span class="text-xs text-gray-500">or</span>
+        <hr class="flex-1 border-gray-300">
+      </div>
+
+      <!-- Google -->
+      <button class="w-full flex items-center justify-center gap-2 bg-gray-200 py-2 rounded-full text-sm">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-4">
+        sign-in With google
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
